@@ -19,24 +19,28 @@ void createLightning() {
   while ( y <= height - 50) {
     fill(255, 0, 0, 200);
     strokeWeight(a);
+
     sum++;
     ran = Math.random();
     if (ran < .3) {  //want 30% execution here
       c1++;
       prevX = x;
       prevY = y;
+
       x += incx*((int)(Math.random()*5)-5);
       y += incy*((int)(Math.random()*8)-2);
     } else if (ran < .9) {  //want 60% execution here
       c2++;
       prevX = x;
       prevY = y;
+
       x += incx*((int)(Math.random()*3)-1);
       y += incy*((int)(Math.random()*8)-2);
     } else {    //want 10% execution here
       c3++;
       prevX = x;
       prevY = y;
+
       x += incx*((int)(Math.random()*5)+5);
       y += incy*((int)(Math.random()*8)-2);
     }
