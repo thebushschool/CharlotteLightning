@@ -53,5 +53,7 @@ void createLightning() {
 }
 void mousePressed() {
   createLightning();
-  setup();
+  x = width/2;
+  y = 0;
+  a = (int)(Math.random()*4)+1;
 }
