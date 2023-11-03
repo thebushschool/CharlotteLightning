@@ -11,7 +11,7 @@ void setup() {
   x = width/2;
   y = 0;
   a = (int)(Math.random()*4)+1;
-  noLoop)(;
+  noLoop();
 }
 
 void draw () {
