@@ -53,9 +53,9 @@ void createLightning() {
     }
     line(prevX, prevY, x, y);
 
-    String out = String.format("%2.2f%% %2.2f%% %2.2f%%",
-      c1/sum*100.0, c2/sum*100.0, c3/sum*100.0);
-    System.out.println(out);
+    //String out = String.format("%2.2f%% %2.2f%% %2.2f%%",
+    //  c1/sum*100.0, c2/sum*100.0, c3/sum*100.0);
+    //System.out.println(out);
   }
 }
 void mousePressed() {
