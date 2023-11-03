@@ -11,11 +11,18 @@ void setup() {
   x = width/2;
   y = 0;
   a = (int)(Math.random()*4)+1;
+  noLoop)(;
 }
+
 void draw () {
-}
-void createLightning() {
   background(bg);
+  createLightning();
+  x = width/2;
+  y = 0;
+  a = (int)(Math.random()*4)+1;
+}
+
+void createLightning() {
   while ( y <= height - 50) {
     fill(255, 0, 0, 200);
     strokeWeight(a);
@@ -52,6 +59,7 @@ void createLightning() {
   }
 }
 void mousePressed() {
+  background(bg);
   createLightning();
   x = width/2;
   y = 0;
